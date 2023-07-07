@@ -532,12 +532,12 @@ CONTAINS
 
     if (present(rc)) rc = 0
 
-    if (ch < 0) then
-       !$omp critical
-       print*, "wavelength of ",wavelength, " is an invalid value."
-       !$omp end critical
-       if (present(rc)) rc = -1
-    endif
+!    if (ch < 0) then
+!       !$omp critical
+!       print*, "wavelength of ",wavelength, " is an invalid value."
+!       !$omp end critical
+!       if (present(rc)) rc = -1
+!    endif
 
   end function getChannel
 
